@@ -1,7 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
-  <category>
+<aiml version= "2.0">
+    
+
+<category>
+    <pattern>what is your name</pattern>
+    <template>
+    <random>
+        <li>My name is </li>
+        <li>I am </li>
+    </random>    
+    <bot name="name"></bot>
+   </template>
+</category>
+
+//Greetings
+<category> 
+    <pattern>hi ^</pattern>
+    <template>
+        <random>
+        <li>Hi! </li>
+        <li>Yo! </li>
+        <li>Hola~ </li>
+        <li>Nice too meet you!</li></random></template>
+</category>
+
+//remember name
+<category>
+<pattern>MY NAME IS *</pattern>
+    <template>
+    <random>
+        <li>Nice to meet you, </li>
+        <li>Hi, </li>
+    </random><set name="name"><star/></set></template>
+</category>
+
+<category>
+    <pattern>WHAT IS MY NAME</pattern>
+    <template>Your name is <get name="name"/>.</template>
+</category>
+
+//gender
+<category>
+    <pattern>^ your gender ^</pattern>
+    <template>
+    I am a  <bot name="Gender"></bot>
+    </template>
+</category>
+
+// refer to pattern start with what is SRAI
+<category>
+    <pattern>tell me what * is</pattern>
+    <template><srai>what is <star/></srai></template>
+</category>
+
+<category>
+    <pattern>hi~</pattern>
+    <template><srai>hi ^ <star/></srai></template>
+</category>
+
+<category>
+    <pattern>yo ^</pattern>
+    <template><srai>hi ^ <star/></srai></template>
+</category>
+
+<category>
+    <pattern>hello ^</pattern>
+    <template><srai>hi ^ <star/></srai></template>
+</category>
+
+<category>
+    <pattern>what is your sex</pattern>
+    <template><srai>^ your gender ^<star/></srai></template>
+</category>
+
+//not found
+<category>
     <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-  </category>
+    <template>Sorry, i can't understand...</template>
+</category>
+
+  
 </aiml>
