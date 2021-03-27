@@ -1,4 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+	
+	
+	
+	<category>
+        <pattern>help</pattern>
+        <template>
+            How can i help you my dear?
+            <button>
+                <text>1.Shipping</text>
+                <postback>shipping</postback>
+            </button>
+            <button>
+                <text>2.Refund</text>
+                <postback>refund</postback>
+            </button>
+            <button>
+                <text>3.Top Up</text>
+                <postback>topup</postback>
+            </button>            
+        </template>
+    </category>
+    
+    <category>
+        <pattern>topup</pattern>
+        <template>
+            What can i help you regarding top up?
+            <button>
+                <text>How to top up</text>
+                <postback>howtopup</postback>
+            </button>
+            <button>
+                <text>I do not receive credits after top up</text>
+                <postback>donotreceivetopup</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>shipping</pattern>
+        <template>
+            What can i help you regarding shipping?
+            <button>
+                <text>Freeshipping</text>
+                <postback>freeshipping</postback>
+            </button>
+            <button>
+                <text>Shipping selection</text>
+                <postback>shippingselection</postback>
+            </button>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>refund</pattern>
+        <template>
+            What can i help you regarding refund?
+            <button>
+                <text>Check refund status</text>
+                <postback>refundstatus</postback>
+            </button>
+            <button>
+                <text>How Lala refund me?</text>
+                <postback>howlalarefund</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>refundstatus</pattern>
+        <template>
+        Click on "Me"->"View Purchase History" ->  "Cancelled" -> "Check Details".<br/><br/>
+        Anything Else?
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>howlalarefund</pattern>
+        <template>
+         1. ATM Bank Transfer / Online Banking / ShopeePay / 7-Eleven Cash Payment 
+         will be refunded into Lala wallet automatically 7-14 working days after cancellation.<br/><br/>
+         2. Credit and Debit card payment will be refunded to respective cards after 7-14 working days.<br/><br/>
+        Anything Else?
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>howtopup</pattern>
+        <template>
+        Me -> Lalawallet -> Top Up<br/><br/>
+        You are allow to pay with :<br/>
+        1) Online Banking <br/>
+        2) Debit / Credit Card<br/>
+        3) Cash Payment at 7-Eleven<br/>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>donotreceivetopup</pattern>
+        <template>
+        Kindly wait for 5 minutes or else try contact <bot name = "phone-number"></bot>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category> 
+    
+    <category>
+        <pattern>shippingselection</pattern>
+        <template>
+        Buyers:<br/>
+        Select your desired option when checkout <br/><br/>
+        Sellers:<br/>
+        1. Click on “Shipping Setting" <br/>
+        2. Checks desired shipping option at the checkbox<br/><br/>
+        Anything Else?
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>freeshipping</pattern>
+        <template>
+        Three Solutions:<br/>
+        1.Reach minimum spend <br/>
+        2.Complies with Terms and Condition <br/>
+        3.Use freeshipping voucher.<br/><br/>
+        Anything Else?
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    
+    <!--SRAI -->
+    <category>
+        <pattern>can you please help me ^</pattern>
+        <template><srai>help</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ receive ^ top up ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ receive ^ topup ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ top up not ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup not ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup is ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ top up is ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+        
+    <category>
+        <pattern> ^ freeshipping ^</pattern>
+        <template><srai>freeshipping</srai></template>
+    </category>
+    
+    <category>
+        <pattern> ^ free shipping ^</pattern>
+        <template><srai>freeshipping</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ receive ^ refund ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ refund not yet ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ refund have not ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ refund ^ yet ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ refund ^ credit ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+      <category>
+        <pattern>top up</pattern>
+        <template><srai>topup</srai></template>
+    </category>
+	
 </aiml>
