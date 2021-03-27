@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+	<!-- -->
 	
 	
-	
+	<!-- HELP -->
 	<category>
         <pattern>help</pattern>
         <template>
@@ -19,17 +19,36 @@
             <button>
                 <text>3.Top Up</text>
                 <postback>topup</postback>
-            </button>            
+            </button>
+            <button>
+                <text>4.List of help commands</text>
+                <postback>aboutme</postback>
+            </button>  
         </template>
     </category>
     
+    <!--About Me -->
+    <category>
+        <pattern>aboutme</pattern>
+        <template>
+            List of commands : <br/><br/>
+            1. shipping<br/>
+            freeshipping , shippingselection <br/><br/>
+            2. topup<br/>
+            howtotopup , donotreceivetopup <br/><br/>
+            3. refund<br/>
+            refundstatus , howlalarefund <br/><br/>
+        </template>
+    </category>
+    
+    <!--TOP UP -->
     <category>
         <pattern>topup</pattern>
         <template>
             What can i help you regarding top up?
             <button>
                 <text>How to top up</text>
-                <postback>howtopup</postback>
+                <postback>howtotopup</postback>
             </button>
             <button>
                 <text>I do not receive credits after top up</text>
@@ -38,6 +57,41 @@
         </template>
     </category>
     
+    <category>
+        <pattern>howtotopup</pattern>
+        <template>
+        Me -> Lalawallet -> Top Up<br/><br/>
+        You are allow to pay with :<br/>
+        1) Online Banking <br/>
+        2) Debit / Credit Card<br/>
+        3) Cash Payment at 7-Eleven<br/>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>   
+        </template>
+    </category>
+    
+    <category>
+        <pattern>donotreceivetopup</pattern>
+        <template>
+        Kindly wait for 5 minutes or else try contact <bot name = "phone-number"></bot>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>   
+        </template>
+    </category> 
+    
+    <!--SHIPPING  -->
     <category>
         <pattern>shipping</pattern>
         <template>
@@ -53,6 +107,44 @@
         </template>
     </category>
     
+    <category>
+        <pattern>shippingselection</pattern>
+        <template>
+        Buyers:<br/>
+        Select your desired option when checkout <br/><br/>
+        Sellers:<br/>
+        1. Click on “Shipping Setting" <br/>
+        2. Checks desired shipping option at the checkbox<br/><br/>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>   
+        </template>
+    </category>
+    
+    <category>
+        <pattern>freeshipping</pattern>
+        <template>
+        Three Solutions:<br/>
+        1.Reach minimum spend <br/>
+        2.Complies with Terms and Condition <br/>
+        3.Use freeshipping voucher.<br/><br/>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>   
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <!--REFUND -->
      <category>
         <pattern>refund</pattern>
         <template>
@@ -72,7 +164,10 @@
         <pattern>refundstatus</pattern>
         <template>
         Click on "Me"->"View Purchase History" ->  "Cancelled" -> "Check Details".<br/><br/>
-        Anything Else?
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>   
         <button>
             <text>Help</text>
             <postback>help</postback>
@@ -86,64 +181,10 @@
          1. ATM Bank Transfer / Online Banking / ShopeePay / 7-Eleven Cash Payment 
          will be refunded into Lala wallet automatically 7-14 working days after cancellation.<br/><br/>
          2. Credit and Debit card payment will be refunded to respective cards after 7-14 working days.<br/><br/>
-        Anything Else?
         <button>
-            <text>Help</text>
-            <postback>help</postback>
-        </button>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>howtopup</pattern>
-        <template>
-        Me -> Lalawallet -> Top Up<br/><br/>
-        You are allow to pay with :<br/>
-        1) Online Banking <br/>
-        2) Debit / Credit Card<br/>
-        3) Cash Payment at 7-Eleven<br/>
-        <button>
-            <text>Help</text>
-            <postback>help</postback>
-        </button>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>donotreceivetopup</pattern>
-        <template>
-        Kindly wait for 5 minutes or else try contact <bot name = "phone-number"></bot>
-        <button>
-            <text>Help</text>
-            <postback>help</postback>
-        </button>
-        </template>
-    </category> 
-    
-    <category>
-        <pattern>shippingselection</pattern>
-        <template>
-        Buyers:<br/>
-        Select your desired option when checkout <br/><br/>
-        Sellers:<br/>
-        1. Click on “Shipping Setting" <br/>
-        2. Checks desired shipping option at the checkbox<br/><br/>
-        Anything Else?
-        <button>
-            <text>Help</text>
-            <postback>help</postback>
-        </button>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>freeshipping</pattern>
-        <template>
-        Three Solutions:<br/>
-        1.Reach minimum spend <br/>
-        2.Complies with Terms and Condition <br/>
-        3.Use freeshipping voucher.<br/><br/>
-        Anything Else?
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>   
         <button>
             <text>Help</text>
             <postback>help</postback>
@@ -158,6 +199,7 @@
         <template><srai>help</srai></template>
     </category>
     
+    <!--top up -->
     <category>
         <pattern>^ receive ^ top up ^</pattern>
         <template><srai>donotreceivetopup</srai></template>
@@ -187,7 +229,27 @@
         <pattern>^ top up is ^</pattern>
         <template><srai>donotreceivetopup</srai></template>
     </category>
+    
+    <category>
+        <pattern>^ top up gone ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    <category>
+        <pattern>^ topup gone ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>top up</pattern>
+        <template><srai>topup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>how ^ top up ^</pattern>
+        <template><srai>howtotopup</srai></template>
+    </category>
         
+    <!--SHIPPING -->
     <category>
         <pattern> ^ freeshipping ^</pattern>
         <template><srai>freeshipping</srai></template>
@@ -198,34 +260,16 @@
         <template><srai>freeshipping</srai></template>
     </category>
     
+    <!--REFUND -->
     <category>
-        <pattern>^ receive ^ refund ^</pattern>
+        <pattern>^ refund ^</pattern>
         <template><srai>howlalarefund</srai></template>
     </category>
     
+    <!--LIST OF COMMAND -->
     <category>
-        <pattern>^ refund not yet ^</pattern>
-        <template><srai>howlalarefund</srai></template>
-    </category>
-    
-    <category>
-        <pattern>^ refund have not ^</pattern>
-        <template><srai>howlalarefund</srai></template>
-    </category>
-    
-    <category>
-        <pattern>^ refund ^ yet ^</pattern>
-        <template><srai>howlalarefund</srai></template>
-    </category>
-    
-    <category>
-        <pattern>^ refund ^ credit ^</pattern>
-        <template><srai>howlalarefund</srai></template>
-    </category>
-    
-      <category>
-        <pattern>top up</pattern>
-        <template><srai>topup</srai></template>
+        <pattern>^ what can you do ^</pattern>
+        <template><srai>aboutme</srai></template>
     </category>
 	
 </aiml>

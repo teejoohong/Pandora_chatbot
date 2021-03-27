@@ -10,7 +10,6 @@
         <li>I am </li>
     </random>    
     <bot name="name"></bot><br/><br/>
-    We sell cookies~
    </template>
 </category>
 
@@ -25,9 +24,29 @@
         <li>Nice too meet you! </li></random>
         Anything i can do for you?
         <button>
-            <text>Help</text>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>        
+        <button>
+            <text>Shopping Help</text>
             <postback>help</postback>
         </button></template>
+</category>
+
+<category>
+    <pattern>myinfo</pattern>
+    <template>
+        You can ask about my name , age , gender , family , personality 
+        ,birthday , phone number , size , fear , hero and many others!
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>           
+    </template>
 </category>
 
 //remember name
@@ -42,6 +61,11 @@
 
 <category>
     <pattern>WHAT IS MY NAME</pattern>
+    <template>Your name is <get name="name"/>.</template>
+</category>
+
+<category>
+    <pattern>WHAT WAS MY NAME</pattern>
     <template>Your name is <get name="name"/>.</template>
 </category>
 
@@ -431,6 +455,16 @@
 </category>
 
 <category>
+    <pattern>tell me what is *</pattern>
+    <template><srai>what is <star/></srai></template>
+</category>
+
+<category>
+    <pattern>^ my name ^</pattern>
+    <template><srai>WHAT IS MY NAME</srai></template>
+</category>
+
+<category>
     <pattern>name</pattern>
     <template><srai>what is your name<star/></srai></template>
 </category>
@@ -466,113 +500,110 @@
 </category>
 
 <category>
-    <pattern>what is your sex</pattern>
+    <pattern># what is your sex #</pattern>
     <template><srai>^ your gender ^<star/></srai></template>
-</category>
-<category>
-    <pattern>STATE YOUR <set>profile</set></pattern>
-    <template><srai><star/></srai></template>
 </category>
 
 <category>
-    <pattern>AUNT</pattern>
+    <pattern>^ AUNT</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>BESTFRIEND</pattern>
+    <pattern>^ BESTFRIEND</pattern>
     <template><srai>FRIENDS</srai></template>
 </category>
 
 <category>
-    <pattern>BOSS</pattern>
+    <pattern>^ BOSS</pattern>
     <template><srai>BOTMASTER</srai></template>
 </category>
 
 <category>
-    <pattern>BROTHER</pattern>
+    <pattern>^ BROTHER</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>CAT</pattern>
+    <pattern>^ CAT</pattern>
     <template><srai>PETS</srai></template>
 </category>
 
 <category>
-    <pattern>DAUGHTER</pattern>
+    <pattern>^ DAUGHTER</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>FRIEND</pattern>
+    <pattern>^ FRIEND</pattern>
     <template><srai>FRIENDS</srai></template>
 </category>
 
 <category>
-    <pattern>GIRLFRIEND</pattern>
+    <pattern>^ GIRLFRIEND</pattern>
     <template><srai>STATUS</srai></template>
 </category>
 
 <category>
-    <pattern>GRANDFATHER</pattern>
+    <pattern>^ GRANDFATHER</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>GRANDMOTHER</pattern>
+    <pattern>^ GRANDMOTHER</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>HUSBAND</pattern>
+    <pattern>^ HUSBAND</pattern>
     <template><srai>STATUS</srai></template>
 </category>
 
 <category>
-    <pattern>NEPHEW</pattern>
+    <pattern>^ NEPHEW</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>NIECE</pattern>
+    <pattern>^ NIECE</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>SISTER</pattern>
+    <pattern>^ SISTER</pattern>
     <template><srai>SIBLINGS</srai></template>
 </category>
 
 <category>
-    <pattern>SON</pattern>
+    <pattern>^ SON</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>TEACHER</pattern>
+    <pattern>^ TEACHER</pattern>
     <template><srai>BOTMASTER</srai></template>
 </category>
 
 <category>
-    <pattern>UNCLE</pattern>
+    <pattern>^ UNCLE</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>WIFE</pattern>
+    <pattern>^ WIFE</pattern>
     <template><srai>STATUS</srai></template>
 </category>
 
 <category>
-    <pattern>FOR FUN</pattern>
+    <pattern>^ FOR FUN</pattern>
     <template><srai>HOBBIES</srai></template>
 </category>
 
 <category>
-    <pattern>BOYFRIEND</pattern>
+    <pattern>^ BOYFRIEND</pattern>
     <template><srai>STATUS</srai></template>
 </category>
+
 
   
 </aiml>
