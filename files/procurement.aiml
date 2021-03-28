@@ -447,17 +447,33 @@
         <template><srai>help</srai></template>
     </category>
     
-    <!--Menu-->
+    <!--help-->
     <category>
         <pattern>^ help ^</pattern>
         <template><srai>help</srai></template>
     </category>
     
+    <!--Gallery-->
+    <category>
+        <pattern>^ gallery ^</pattern>
+        <template><srai>photo</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ photo ^</pattern>
+        <template><srai>photo</srai></template>
+    </category>
      <!--Menu-->
     <category>
         <pattern>^ menu ^</pattern>
         <template><srai>menu</srai></template>
     </category>
+    
+    <category>
+        <pattern>what ^ sell ^</pattern>
+        <template><srai>menu</srai></template>
+    </category>
+
     
     <!--Order-->
     <category>
@@ -638,7 +654,7 @@
     
     <!--LIST OF COMMAND -->
     <category>
-        <pattern>^ what can you do ^</pattern>
+        <pattern>^ what ^ you do ^</pattern>
         <template><srai>hi</srai>
         </template>
     </category>

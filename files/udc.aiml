@@ -33,7 +33,7 @@
         <li>Yo! </li>
         <li>Hola~ </li>
         <li>Nice too meet you! </li></random>
-        Anything i can do for you?
+        I am here to asist you.
         <button>
             <text>My Info</text>
             <postback>myinfo</postback>
@@ -123,15 +123,24 @@
     <random>
         <li>Nice to meet you, </li>
         <li>Hi, </li>
-        </random><set name="name"><star/></set>
-        <button>
-            <text>Help</text>
-            <postback>help</postback>
-        </button>
-        <button>
+        </random><set name="name"><star/></set><br/>
+        How can i help you?
+               <button>
             <text>My Info</text>
             <postback>myinfo</postback>
-        </button>    
+        </button>  
+        <button>
+            <text>Menu</text>
+            <postback>menu</postback>
+        </button> 
+        <button>
+            <text>Photo Gallery</text>
+            <postback>photo</postback>
+        </button> 
+        <button>
+            <text>Shopping Help</text>
+            <postback>help</postback>
+        </button>
 </template>
 </category>
 
