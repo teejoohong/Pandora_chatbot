@@ -117,17 +117,13 @@
                 <postback>topup</postback>
             </button>
             <button>
-                <text>Menu</text>
-                <postback>menu</postback>
-            </button>  
-            <button>
                 <text>Contacts</text>
                 <postback>contact</postback>
             </button>
             <button>
-                <text>List of help commands</text>
-                <postback>helpcommand</postback>
-            </button>  
+                <text>Home</text>
+                <postback>hi</postback>
+            </button>
         </template>
     </category>
     
@@ -162,9 +158,9 @@
         2.Click on "Check Out" <br/>
         3.Select your payment method and pay.
         <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
@@ -183,9 +179,9 @@
         -The seller has not shipped out the order.<br/>
         -You have not requested for cancellation for this order before this.<br/>
         <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
@@ -198,8 +194,8 @@
         <template>
         The receipt will be sent to your mail box after purchase.
         <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
+            <text>Home</text>
+            <postback>hi</postback>
         </button> 
         <button>
             <text>Help</text>
@@ -214,8 +210,8 @@
         1.Kindly contact us at 012-256 4070.<br/>
         2.Drop an email at leejx-wp18@student.tarc.edu.my<br/>
         <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
+            <text>Home</text>
+            <postback>hi</postback>
         </button> 
         <button>
             <text>Help</text>
@@ -233,9 +229,9 @@
         Email address :<br/>
         leejx-wp18@student.tarc.edu.my
         <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
@@ -259,46 +255,16 @@
         9.Mix Berries Cookies ---------- $0.7/pcs  <br/> 
 
         <button>
-            <text>Help</text>
-            <postback>help</postback>
+            <text>Home</text>
+            <postback>hi</postback>
         </button>
         <button>
             <text>Gallery</text>
             <postback>photo</postback>
         </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
         </template>
     </category>
     
-    <!--About Me -->
-    <category>
-        <pattern>helpcommand</pattern>
-        <template>
-            List of commands : <br/><br/>
-            1. shipping<br/>
-            freeshipping , shippingselection , shippingstatus <br/><br/>
-            2. topup<br/>
-            howtotopup , donotreceivetopup <br/><br/>
-            3. refund<br/>
-            refundstatus , howlalarefund <br/><br/>
-            4. order<br/>
-            cancelorder , ordergone<br/><br/>
-            5. menu<br/><br/>
-            6. contact <br/><br/>
-
-        <button>
-            <text>Help</text>
-            <postback>help</postback>
-        </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
-        </template>
-    </category>
     
     <!--TOP UP -->
     <category>
@@ -324,15 +290,14 @@
         1) Online Banking <br/>
         2) Debit / Credit Card<br/>
         3) Cash Payment at 7-Eleven<br/>
-
+        <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
         </template>
     </category>
     
@@ -340,15 +305,14 @@
         <pattern>donotreceivetopup</pattern>
         <template>
         Kindly wait for 5 minutes or else try contact <bot name = "phone-number"></bot>
-
+        <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
         </template>
     </category> 
     
@@ -377,15 +341,14 @@
         <template>
         1. Me -> My Purchases -> To Receive Tab <br/>
         2. Tap on the order you'd like to check on -> Click 'View' under Shipping Information. 
-  
+          <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
         </template>
     </category>
     
@@ -397,15 +360,14 @@
         Sellers:<br/>
         1. Click on “Shipping Setting" <br/>
         2. Checks desired shipping option at the checkbox<br/><br/>
-        
+                <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
         </template>
     </category>
     
@@ -416,15 +378,15 @@
         1.Reach minimum spend <br/>
         2.Complies with Terms and Condition <br/>
         3.Use freeshipping voucher.<br/><br/>
-
+        <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button>   
+
         </template>
     </category>
     
@@ -448,15 +410,14 @@
         <pattern>refundstatus</pattern>
         <template>
         Click on "Me"->"View Purchase History" ->  "Cancelled" -> "Check Details".<br/><br/>
-
+        <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button>   
         </template>
     </category>
     
@@ -466,15 +427,14 @@
          1. ATM Bank Transfer / Online Banking / ShopeePay / 7-Eleven Cash Payment 
          will be refunded into Lala wallet automatically 7-14 working days after cancellation.<br/><br/>
          2. Credit and Debit card payment will be refunded to respective cards after 7-14 working days.<br/><br/>
-  
+          <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button> 
         </template>
     </category>
     
@@ -679,7 +639,7 @@
     <!--LIST OF COMMAND -->
     <category>
         <pattern>^ what can you do ^</pattern>
-        <template><srai>helpcommand</srai>
+        <template><srai>hi</srai>
         </template>
     </category>
 	

@@ -37,7 +37,11 @@
         <button>
             <text>My Info</text>
             <postback>myinfo</postback>
-        </button>     
+        </button>  
+        <button>
+            <text>Menu</text>
+            <postback>menu</postback>
+        </button> 
         <button>
             <text>Photo Gallery</text>
             <postback>photo</postback>
@@ -90,7 +94,10 @@
             <text>Chocolate raisin cookies</text>
             <postback>chocolate raisin cookies</postback>
         </button>
-        
+        <button>
+            <text>Back</text>
+            <postback>hi</postback>
+        </button>
         
     </template>
 </category>
@@ -103,13 +110,9 @@
         You can ask about my name , age , gender , family , personality 
         ,birthday , phone number , size , fear , hero and many others!
         <button>
-            <text>Help</text>
-            <postback>help</postback>
-        </button>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button>           
+            <text>Back</text>
+            <postback>hi</postback>
+        </button>         
     </template>
 </category>
 
