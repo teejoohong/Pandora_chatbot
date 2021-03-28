@@ -469,6 +469,36 @@
     </category>
     
     <category>
+        <pattern>^ topup money gone ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup credit gone ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup credits gone ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ top up money gone ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ top up credit gone ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ top up credits gone ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
         <pattern>top up</pattern>
         <template><srai>topup</srai></template>
     </category>
@@ -499,10 +529,34 @@
         <template><srai>shippingselection</srai></template>
     </category>
     
+    <category>
+        <pattern> ^ shippingstatus ^</pattern>
+        <template><srai>shippingstatus</srai></template>
+    </category>
+    
+    <category>
+        <pattern> ^ shipping status ^</pattern>
+        <template><srai>shippingstatus</srai></template>
+    </category>
+    <category>
+        <pattern> ^ shipping ^ status ^</pattern>
+        <template><srai>shippingstatus</srai></template>
+    </category>
+    
     <!--REFUND -->
     <category>
         <pattern>^ refund ^</pattern>
         <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ refundstatus ^</pattern>
+        <template><srai>refundstatus</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ refund status ^</pattern>
+        <template><srai>refundstatus</srai></template>
     </category>
     
     <!--LIST OF COMMAND -->
