@@ -220,20 +220,11 @@
     </interval>
     </set>
     </think>
-    <condition var="years">
-    <li value="0">I am <get var="days"/> days old.</li>
-    <li>I am <get var="years"/> years old.</li>
-    </condition></template>
+    I am <get var="years"/> years , <get var="days"/> days old.
+    
+    </template>
 </category>
 
-<category>
-    <pattern>^ AGE IN YEARS</pattern>
-    <template><interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
-    <style>years</style>
-    <from><bot name="birthdate"/></from>
-    <to><date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/></to>
-    </interval></template>
-</category>
 
 <!-- Background -->
 <category><pattern>^ BIRTHPLACE ^</pattern>
