@@ -27,12 +27,65 @@
         <button>
             <text>My Info</text>
             <postback>myinfo</postback>
-        </button>        
+        </button>     
+        <button>
+            <text>Photo Gallery</text>
+            <postback>photo</postback>
+        </button> 
         <button>
             <text>Shopping Help</text>
             <postback>help</postback>
         </button></template>
 </category>
+
+<!-- photo gallery-->
+<category>
+    <pattern>photo</pattern>
+    <template>
+        Select the following cookies :
+        <button>
+            <text>Chocolate Chip Cookie</text>
+            <postback>chocolate chip cookie</postback>
+        </button>
+        <button>
+            <text>Strawberry cookie</text>
+            <postback>strawberry cookie</postback>
+        </button>
+        <button>
+            <text>Banana cookie</text>
+            <postback>banana cookie</postback>
+        </button>
+        <button>
+            <text>Original cookie</text>
+            <postback>original cookie</postback>
+        </button>
+        <button>
+            <text>Chocolate Almond cookies</text>
+            <postback>chocolate almond cookies</postback>
+        </button>
+        <button>
+            <text>White chocolate cookie</text>
+            <postback>white chocolate cookie</postback>
+        </button>
+        <button>
+            <text>Dark chocolate cookies</text>
+            <postback>dark chocolate cookies</postback>
+        </button>
+        
+        <button>
+            <text>Mix berry cookies</text>
+            <postback>mix berry cookies</postback>
+        </button>
+        <button>
+            <text>Chocolate raisin cookies</text>
+            <postback>chocolate raisin cookies</postback>
+        </button>
+        
+        
+    </template>
+</category>
+
+<!--My info-->
 
 <category>
     <pattern>myinfo</pattern>
