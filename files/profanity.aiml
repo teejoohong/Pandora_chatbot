@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+	
+<!--# same like ^ but have highest priority to be called -->
+
 <category>
     <pattern>FILTER INAPPROPRIATE</pattern>
     <template>Please behave yourself!!!</template>

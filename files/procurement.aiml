@@ -9,35 +9,177 @@
         <template>
             How can i help you my dear?
             <button>
-                <text>1.Shipping</text>
+                <text>Order</text>
+                <postback>order</postback>
+            </button>  
+            <button>
+                <text>Shipping</text>
                 <postback>shipping</postback>
             </button>
             <button>
-                <text>2.Refund</text>
+                <text>Refund</text>
                 <postback>refund</postback>
             </button>
             <button>
-                <text>3.Top Up</text>
+                <text>Top Up</text>
                 <postback>topup</postback>
             </button>
             <button>
-                <text>4.List of help commands</text>
-                <postback>aboutme</postback>
+                <text>Menu</text>
+                <postback>menu</postback>
             </button>  
+            <button>
+                <text>Contacts</text>
+                <postback>contact</postback>
+            </button>
+            <button>
+                <text>List of help commands</text>
+                <postback>helpcommand</postback>
+            </button>  
+        </template>
+    </category>
+    
+    <!-- Contact -->
+    <category>
+        <pattern>order</pattern>
+        <template>
+        How can i help you regarding order?
+        <button>
+            <text>How to cancel order</text>
+            <postback>cancelorder</postback>
+        </button>
+        <button>
+            <text>My order is gone</text>
+            <postback>ordergone</postback>
+        </button>
+        <button>
+            <text>How can i get my receipt</text>
+            <postback>getreceipt</postback>
+        </button>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>cancelorder</pattern>
+        <template>
+        1.Click on "Me" and "To Pay / To Ship".<br/>
+        2.Click on "Cancel Order" <br/><br/>
+        
+        NOTE : You can cancel order only if<br/>
+        -You have not made full payment to your order.<br/>
+        -The seller has not shipped out the order.<br/>
+        -You have not requested for cancellation for this order before this.<br/>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button> 
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>getreceipt</pattern>
+        <template>
+        The receipt will be sent to your mail box after purchase.
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button> 
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>ordergone</pattern>
+        <template>
+        1.Kindly contact us at 012-256 4070.<br/>
+        2.Drop an email at leejx-wp18@student.tarc.edu.my<br/>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button> 
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <!-- Contact -->
+    <category>
+        <pattern>contact</pattern>
+        <template>
+        Contact No : <br/>
+        012-256 4070<br/><br/>
+        Email address :<br/>
+        leejx-wp18@student.tarc.edu.my
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button> 
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <!-- Menu -->
+    <category>
+        <pattern>menu</pattern>
+        <template>
+        Menu : <br/>
+        1.Chocolate Chip Cookies ----- $0.5/pcs  <br/> 
+        2.Strawberry Cookies ---------- $0.5/pcs  <br/> 
+        3.Banana Cookies --------------- $0.5/pcs  <br/> 
+        4.Original Cookies --------------- $0.3/pcs  <br/> 
+        5.Choclate Almond Cookies-- $0.7/pcs  <br/> 
+        6.White Chocolate Cookies -- $0.7/pcs  <br/> 
+        7.Dark Chocolate Cookies ---- $0.5/pcs  <br/> 
+        8.Chocolate Raisin Cookies -- $0.7/pcs  <br/> 
+        9.Mix Berries Cookies ---------- $0.7/pcs  <br/> 
+
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button> 
         </template>
     </category>
     
     <!--About Me -->
     <category>
-        <pattern>aboutme</pattern>
+        <pattern>helpcommand</pattern>
         <template>
             List of commands : <br/><br/>
             1. shipping<br/>
-            freeshipping , shippingselection <br/><br/>
+            freeshipping , shippingselection , shippingstatus <br/><br/>
             2. topup<br/>
             howtotopup , donotreceivetopup <br/><br/>
             3. refund<br/>
             refundstatus , howlalarefund <br/><br/>
+            4. order<br/>
+            cancelorder , ordergone<br/><br/>
+            5. menu<br/><br/>
+            6. contact <br/><br/>
+
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button> 
         </template>
     </category>
     
@@ -65,6 +207,7 @@
         1) Online Banking <br/>
         2) Debit / Credit Card<br/>
         3) Cash Payment at 7-Eleven<br/>
+
         <button>
             <text>Help</text>
             <postback>help</postback>
@@ -72,7 +215,7 @@
         <button>
             <text>My Info</text>
             <postback>myinfo</postback>
-        </button>   
+        </button> 
         </template>
     </category>
     
@@ -80,6 +223,7 @@
         <pattern>donotreceivetopup</pattern>
         <template>
         Kindly wait for 5 minutes or else try contact <bot name = "phone-number"></bot>
+
         <button>
             <text>Help</text>
             <postback>help</postback>
@@ -87,7 +231,7 @@
         <button>
             <text>My Info</text>
             <postback>myinfo</postback>
-        </button>   
+        </button> 
         </template>
     </category> 
     
@@ -104,6 +248,27 @@
                 <text>Shipping selection</text>
                 <postback>shippingselection</postback>
             </button>
+            <button>
+                <text>How to check shipping status?</text>
+                <postback>shippingstatus</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>shippingstatus</pattern>
+        <template>
+        1. Me -> My Purchases -> To Receive Tab <br/>
+        2. Tap on the order you'd like to check on -> Click 'View' under Shipping Information. 
+  
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button> 
         </template>
     </category>
     
@@ -115,6 +280,7 @@
         Sellers:<br/>
         1. Click on “Shipping Setting" <br/>
         2. Checks desired shipping option at the checkbox<br/><br/>
+        
         <button>
             <text>Help</text>
             <postback>help</postback>
@@ -122,7 +288,7 @@
         <button>
             <text>My Info</text>
             <postback>myinfo</postback>
-        </button>   
+        </button> 
         </template>
     </category>
     
@@ -133,14 +299,15 @@
         1.Reach minimum spend <br/>
         2.Complies with Terms and Condition <br/>
         3.Use freeshipping voucher.<br/><br/>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button>   
+
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>   
         </template>
     </category>
     
@@ -164,14 +331,15 @@
         <pattern>refundstatus</pattern>
         <template>
         Click on "Me"->"View Purchase History" ->  "Cancelled" -> "Check Details".<br/><br/>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button>   
+
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>   
         </template>
     </category>
     
@@ -181,22 +349,83 @@
          1. ATM Bank Transfer / Online Banking / ShopeePay / 7-Eleven Cash Payment 
          will be refunded into Lala wallet automatically 7-14 working days after cancellation.<br/><br/>
          2. Credit and Debit card payment will be refunded to respective cards after 7-14 working days.<br/><br/>
-        <button>
-            <text>My Info</text>
-            <postback>myinfo</postback>
-        </button>   
+  
         <button>
             <text>Help</text>
             <postback>help</postback>
         </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button> 
         </template>
     </category>
     
     
-    <!--SRAI -->
+    <!--SRAI (system will prompt template and call the stated word)-->
+    <!-- ^ means can be kosong or can have thing there -->
+    <!-- <star> means * de thing and * means must have thing there -->
     <category>
         <pattern>can you please help me ^</pattern>
         <template><srai>help</srai></template>
+    </category>
+    
+    <!--Menu-->
+    <category>
+        <pattern>^ help ^</pattern>
+        <template><srai>help</srai></template>
+    </category>
+    
+     <!--Menu-->
+    <category>
+        <pattern>^ menu ^</pattern>
+        <template><srai>menu</srai></template>
+    </category>
+    
+    <!--Order-->
+    <category>
+        <pattern>^ cancel order ^</pattern>
+        <template><srai>cancelorder</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ cancelorder ^</pattern>
+        <template><srai>cancelorder</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ cancel ^ order ^</pattern>
+        <template><srai>cancelorder</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ order ^ gone ^</pattern>
+        <template><srai>ordergone</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ ordergone ^</pattern>
+        <template><srai>ordergone</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ order gone ^</pattern>
+        <template><srai>ordergone</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ getreceipt ^</pattern>
+        <template><srai>getreceipt</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ get receipt ^</pattern>
+        <template><srai>getreceipt</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ get ^ receipt ^</pattern>
+        <template><srai>getreceipt</srai></template>
     </category>
     
     <!--top up -->
@@ -260,6 +489,16 @@
         <template><srai>freeshipping</srai></template>
     </category>
     
+    <category>
+        <pattern> ^ shipping selection ^</pattern>
+        <template><srai>shippingselection</srai></template>
+    </category>
+        
+    <category>
+        <pattern> ^ shippingselection ^</pattern>
+        <template><srai>shippingselection</srai></template>
+    </category>
+    
     <!--REFUND -->
     <category>
         <pattern>^ refund ^</pattern>
@@ -269,7 +508,8 @@
     <!--LIST OF COMMAND -->
     <category>
         <pattern>^ what can you do ^</pattern>
-        <template><srai>aboutme</srai></template>
+        <template><srai>helpcommand</srai>
+        </template>
     </category>
 	
 </aiml>

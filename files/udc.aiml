@@ -3,7 +3,7 @@
     
 
 <category>
-    <pattern>what is your name</pattern>
+    <pattern>^ your name ^</pattern>
     <template>
     <random>
         <li>My name is </li>
@@ -12,6 +12,7 @@
     <bot name="name"></bot><br/><br/>
    </template>
 </category>
+
 
 //Greetings
 <category> 
@@ -56,7 +57,16 @@
     <random>
         <li>Nice to meet you, </li>
         <li>Hi, </li>
-    </random><set name="name"><star/></set></template>
+        </random><set name="name"><star/></set>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>    
+</template>
 </category>
 
 <category>
@@ -466,7 +476,7 @@
 
 <category>
     <pattern>name</pattern>
-    <template><srai>what is your name<star/></srai></template>
+    <template><srai>what is your name</srai></template>
 </category>
 
 <category>
@@ -604,6 +614,14 @@
     <template><srai>STATUS</srai></template>
 </category>
 
+<category>
+    <pattern>I am *</pattern>
+    <template><srai>MY NAME IS <star/></srai></template>
+</category>
 
+<category>
+    <pattern>my info</pattern>
+    <template><srai>myinfo</srai></template>
+</category>
   
 </aiml>
