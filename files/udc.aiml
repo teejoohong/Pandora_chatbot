@@ -197,6 +197,11 @@
     <template>I was born on <bot name="birthdate"/>.</template>
 </category>
 
+<category> 
+<pattern>^ DATE ^</pattern>
+<template>Today is <date format="%B %d, %Y" /></template>
+</category>
+
 <category>
     <pattern>^ AGE  ^</pattern>
     <template><think>
@@ -207,16 +212,16 @@
     <to><date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/></to>
     </interval>
     </set>
-    <set var="months">
+    <set var="days">
     <interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
-    <style>months</style>
+    <style>days</style>
     <from><bot name="birthdate"/></from>
     <to><date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/></to>
     </interval>
     </set>
     </think>
     <condition var="years">
-    <li value="0">I am <get var="months"/> months old.</li>
+    <li value="0">I am <get var="days"/> days old.</li>
     <li>I am <get var="years"/> years old.</li>
     </condition></template>
 </category>
