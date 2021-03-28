@@ -13,6 +13,16 @@
    </template>
 </category>
 
+<category>
+    <pattern>^ bye ^</pattern>
+    <template>
+    <random>
+        <li>Bye Bye </li>
+        <li>Sayonara </li>
+    </random>
+    <get name = "name"></get>
+    </template>
+</category>
 
 //Greetings
 <category> 

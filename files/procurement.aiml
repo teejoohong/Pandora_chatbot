@@ -131,11 +131,15 @@
         </template>
     </category>
     
-    <!-- Contact -->
+    <!-- order -->
     <category>
         <pattern>order</pattern>
         <template>
         How can i help you regarding order?
+        <button>
+            <text>How to make payment for an order.</text>
+            <postback>payment</postback>
+        </button>
         <button>
             <text>How to cancel order</text>
             <postback>cancelorder</postback>
@@ -147,6 +151,23 @@
         <button>
             <text>How can i get my receipt</text>
             <postback>getreceipt</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>payment</pattern>
+        <template>
+        1.Click on "Me" and "To Pay / To Ship".<br/>
+        2.Click on "Check Out" <br/>
+        3.Select your payment method and pay.
+        <button>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button> 
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
         </button>
         </template>
     </category>
@@ -231,7 +252,7 @@
         2.Strawberry Cookies ---------- $0.5/pcs  <br/> 
         3.Banana Cookies --------------- $0.5/pcs  <br/> 
         4.Original Cookies --------------- $0.3/pcs  <br/> 
-        5.Chocolate Almond Cookies-- $0.7/pcs  <br/> 
+        5.Chocolate Almond Cookies- $0.7/pcs  <br/> 
         6.White Chocolate Cookies -- $0.7/pcs  <br/> 
         7.Dark Chocolate Cookies ---- $0.5/pcs  <br/> 
         8.Chocolate Raisin Cookies -- $0.7/pcs  <br/> 
