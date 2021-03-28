@@ -217,7 +217,7 @@
 </category>
 
 <!-- Background -->
-<category><pattern>^ BIRTHPLACE</pattern>
+<category><pattern>^ BIRTHPLACE ^</pattern>
     <template>I was born in <bot name="birthplace"/>.</template>
 </category>
 <category><pattern>^ NATIONALITY</pattern>
@@ -709,6 +709,11 @@
 <category>
     <pattern>my info</pattern>
     <template><srai>myinfo</srai></template>
+</category>
+
+<category>
+    <pattern>^ where ^ are ^ you ^</pattern>
+    <template><srai>location</srai></template>
 </category>
   
 </aiml>

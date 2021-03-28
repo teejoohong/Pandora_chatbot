@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- cookies -->
+	
+	<category>
+    <pattern>^ cookie ^ tasty ^</pattern>
+    <template>
+        of course
+        <button>
+            <text>See cookies in the menu</text>
+            <postback>menu</postback>
+        </button>  
+   </template>
+    </category>
+	
 	<category>
 	    <pattern>chocolate chip cookie</pattern>
 	    <template><image>https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_2560%2Cc_limit/chocolate-chip-cookie.jpg</image>
+	    Made by chocolate chips, chocolate, milk, flour.
 	    <button>
             <text>View More</text>
             <postback>photo</postback>
@@ -128,6 +141,11 @@
     </category>
     
     <!-- order -->
+    <category>
+        <pattern>^ shop ^ location ^</pattern>
+        <template>We sell cookies online</template>
+    </category>
+    
     <category>
         <pattern>order</pattern>
         <template>
@@ -370,6 +388,13 @@
     </category>
     
     <category>
+        <pattern>^ how much ^ shipping ^</pattern>
+        <template>
+        RM3 to RM10 depends on the location.
+        </template>
+    </category>
+    
+    <category>
         <pattern>shippingselection</pattern>
         <template>
         Buyers:<br/>
@@ -502,6 +527,11 @@
         <pattern>what ^ sell ^</pattern>
         <template><srai>menu</srai></template>
     </category>
+    
+    <category>
+        <pattern>^ how much ^ cookie ^</pattern>
+        <template><srai>menu</srai></template>
+    </category>
 
     
     <!--Order-->
@@ -557,7 +587,12 @@
     
      <!--payment -->
     <category>
-        <pattern>^ make payment ^</pattern>
+        <pattern>^ payment ^</pattern>
+        <template><srai>payment</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ pay ^</pattern>
         <template><srai>payment</srai></template>
     </category>
     
@@ -642,7 +677,7 @@
     </category>
     
     <category>
-        <pattern>top up</pattern>
+        <pattern>^ top up ^</pattern>
         <template><srai>topup</srai></template>
     </category>
     
@@ -730,6 +765,12 @@
         <pattern>^ what ^ you do ^</pattern>
         <template><srai>hi</srai>
         </template>
+    </category>
+    
+    <!-- Discount -->
+    <category>
+        <pattern>^ freegift ^</pattern>
+        <template>Sorry our cookie is already very cheap! </template>
     </category>
 	
 </aiml>
