@@ -522,7 +522,19 @@
     <pattern>*</pattern>
     <template>Anything else i can help you?
         <button>
-            <text>Help</text>
+            <text>My Info</text>
+            <postback>myinfo</postback>
+        </button>  
+        <button>
+            <text>Menu</text>
+            <postback>menu</postback>
+        </button> 
+        <button>
+            <text>Photo Gallery</text>
+            <postback>photo</postback>
+        </button> 
+        <button>
+            <text>Shopping Help</text>
             <postback>help</postback>
         </button>
     </template>

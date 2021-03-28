@@ -148,9 +148,26 @@
             <text>How can i get my receipt</text>
             <postback>getreceipt</postback>
         </button>
+        <button>
+            <text>Payment failed</text>
+            <postback>paymentfail</postback>
+        </button>
         </template>
     </category>
-    
+    <category>
+        <pattern>paymentfail</pattern>
+        <template>
+        Please check if you have enough balance.
+        <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
     <category>
         <pattern>payment</pattern>
         <template>
@@ -453,6 +470,18 @@
         <template><srai>help</srai></template>
     </category>
     
+        <!--help-->
+    <category>
+        <pattern>^ receipt ^</pattern>
+        <template><srai>receipt</srai></template>
+    </category>
+    
+    <!--contact-->
+    <category>
+        <pattern>^ contact ^</pattern>
+        <template><srai>contact</srai></template>
+    </category>
+    
     <!--Gallery-->
     <category>
         <pattern>^ gallery ^</pattern>
@@ -521,6 +550,17 @@
         <template><srai>getreceipt</srai></template>
     </category>
     
+    <category>
+        <pattern>^ payment ^ fail ^</pattern>
+        <template><srai>paymentfail</srai></template>
+    </category>
+    
+     <!--payment -->
+    <category>
+        <pattern>^ make payment ^</pattern>
+        <template><srai>payment</srai></template>
+    </category>
+    
     <!--top up -->
     <category>
         <pattern>^ receive ^ top up ^</pattern>
@@ -549,6 +589,16 @@
     
     <category>
         <pattern>^ top up is ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ top up credit ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup credit ^</pattern>
         <template><srai>donotreceivetopup</srai></template>
     </category>
     
@@ -627,13 +677,36 @@
         <template><srai>shippingstatus</srai></template>
     </category>
     
+    
     <category>
         <pattern> ^ shipping status ^</pattern>
         <template><srai>shippingstatus</srai></template>
     </category>
+    
+    
+        <category>
+        <pattern> ^ order ^ status ^</pattern>
+        <template><srai>shippingstatus</srai></template>
+    </category>
+    
+            <category>
+        <pattern> ^ track ^ order ^</pattern>
+        <template><srai>shippingstatus</srai></template>
+    </category>
+    
+                <category>
+        <pattern> ^ view ^ order ^</pattern>
+        <template><srai>shippingstatus</srai></template>
+    </category>
+    
     <category>
         <pattern> ^ shipping ^ status ^</pattern>
         <template><srai>shippingstatus</srai></template>
+    </category>
+    
+        <category>
+        <pattern> how ^ ship ^</pattern>
+        <template><srai>shippingselection</srai></template>
     </category>
     
     <!--REFUND -->
