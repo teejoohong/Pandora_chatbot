@@ -116,6 +116,20 @@
     </template>
 </category>
 
+<category>
+    <pattern>^ nani ^</pattern>
+    <template>
+        Yameteh kudasai!
+    </template>
+</category>
+
+<category>
+    <pattern>^ wtf ^</pattern>
+    <template>
+        Wow that's fantastic!
+    </template>
+</category>
+
 //remember name
 <category>
 <pattern>MY NAME IS *</pattern>
@@ -562,142 +576,142 @@
 </category>
 
 <category>
-    <pattern>name</pattern>
+    <pattern>^ name ^</pattern>
     <template><srai>what is your name</srai></template>
 </category>
 
 <category>
-    <pattern>hi~</pattern>
+    <pattern>^ hi~ ^</pattern>
     <template><srai>hi ^ <star/></srai></template>
 </category>
 
 <category>
-    <pattern>yo ^</pattern>
+    <pattern>^ yo ^</pattern>
     <template><srai>hi ^ <star/></srai></template>
 </category>
 
 <category>
-    <pattern>hello ^</pattern>
+    <pattern>^ hello ^</pattern>
     <template><srai>hi ^ <star/></srai></template>
 </category>
 
 <category>
-    <pattern>who are you</pattern>
+    <pattern>^ who are you ^</pattern>
     <template><srai>name<star/></srai></template>
 </category>
 
 <category>
-    <pattern>what are you</pattern>
+    <pattern>^ what are you ^</pattern>
     <template><srai>what is your gender<star/></srai></template>
 </category>
 
 <category>
-    <pattern>oi ^</pattern>
+    <pattern>^ oi ^</pattern>
     <template><srai>hi ^ <star/></srai></template>
 </category>
 
 <category>
-    <pattern># what is your sex #</pattern>
+    <pattern># your sex #</pattern>
     <template><srai>^ your gender ^<star/></srai></template>
 </category>
 
 <category>
-    <pattern>^ AUNT</pattern>
+    <pattern>^ AUNT ^</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>^ BESTFRIEND</pattern>
+    <pattern>^ BESTFRIEND ^</pattern>
     <template><srai>FRIENDS</srai></template>
 </category>
 
 <category>
-    <pattern>^ BOSS</pattern>
+    <pattern>^ BOSS ^</pattern>
     <template><srai>BOTMASTER</srai></template>
 </category>
 
 <category>
-    <pattern>^ BROTHER</pattern>
+    <pattern>^ BROTHER ^</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>^ CAT</pattern>
+    <pattern>^ CAT ^</pattern>
     <template><srai>PETS</srai></template>
 </category>
 
 <category>
-    <pattern>^ DAUGHTER</pattern>
+    <pattern>^ DAUGHTER ^</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>^ FRIEND</pattern>
+    <pattern>^ FRIEND ^</pattern>
     <template><srai>FRIENDS</srai></template>
 </category>
 
 <category>
-    <pattern>^ GIRLFRIEND</pattern>
+    <pattern>^ GIRLFRIEND ^</pattern>
     <template><srai>STATUS</srai></template>
 </category>
 
 <category>
-    <pattern>^ GRANDFATHER</pattern>
+    <pattern>^ GRANDFATHER ^</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>^ GRANDMOTHER</pattern>
+    <pattern>^ GRANDMOTHER ^</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>^ HUSBAND</pattern>
+    <pattern>^ HUSBAND ^</pattern>
     <template><srai>STATUS</srai></template>
 </category>
 
 <category>
-    <pattern>^ NEPHEW</pattern>
+    <pattern>^ NEPHEW ^</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>^ NIECE</pattern>
+    <pattern>^ NIECE ^</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>^ SISTER</pattern>
+    <pattern>^ SISTER ^</pattern>
     <template><srai>SIBLINGS</srai></template>
 </category>
 
 <category>
-    <pattern>^ SON</pattern>
+    <pattern>^ SON ^</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>^ TEACHER</pattern>
+    <pattern>^ TEACHER ^</pattern>
     <template><srai>BOTMASTER</srai></template>
 </category>
 
 <category>
-    <pattern>^ UNCLE</pattern>
+    <pattern>^ UNCLE ^</pattern>
     <template><srai>FAMILY</srai></template>
 </category>
 
 <category>
-    <pattern>^ WIFE</pattern>
+    <pattern>^ WIFE ^</pattern>
     <template><srai>STATUS</srai></template>
 </category>
 
 <category>
-    <pattern>^ FOR FUN</pattern>
+    <pattern>^ FOR FUN ^</pattern>
     <template><srai>HOBBIES</srai></template>
 </category>
 
 <category>
-    <pattern>^ BOYFRIEND</pattern>
+    <pattern>^ BOYFRIEND ^</pattern>
     <template><srai>STATUS</srai></template>
 </category>
 
@@ -707,7 +721,7 @@
 </category>
 
 <category>
-    <pattern>my info</pattern>
+    <pattern>^ info ^</pattern>
     <template><srai>myinfo</srai></template>
 </category>
 
