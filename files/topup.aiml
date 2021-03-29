@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+    <!--TOP UP -->
+    <category>
+        <pattern>topup</pattern>
+        <template>
+            What can i help you regarding top up?
+            <button>
+                <text>How to top up</text>
+                <postback>howtotopup</postback>
+            </button>
+            <button>
+                <text>I do not receive credits after top up</text>
+                <postback>donotreceivetopup</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>howtotopup</pattern>
+        <template>
+        Me -> Lalawallet -> Top Up<br/><br/>
+        You are allow to pay with :<br/>
+        1) Online Banking <br/>
+        2) Debit / Credit Card<br/>
+        3) Cash Payment at 7-Eleven<br/>
+        <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>donotreceivetopup</pattern>
+        <template>
+        Kindly wait for 5 minutes or else try contact <bot name = "phone-number"></bot>
+        <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category> 
+
+    <!--top up -->
+    
+    <category>
+        <pattern>^ receive ^ topup ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ not ^ credit ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ credit ^ not ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ no ^ credit ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ credit ^ no ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ have not ^ topup ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup ^ have not ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup ^ not ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ when ^ credit ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ credit ^ not yet ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ topup ^ slow ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ not yet ^ credit ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ slow ^ topup ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup ^ is ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ want ^ topup ^</pattern>
+        <template><srai>howtotopup</srai></template>
+    </category>
+    
+            <category>
+        <pattern>^ can not ^ topup ^</pattern>
+        <template><srai>howtotopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup ^ gone ^</pattern>
+        <template><srai>donotreceivetopup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup ^</pattern>
+        <template><srai>topup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ how ^ topup ^</pattern>
+        <template><srai>howtotopup</srai></template>
+    </category>
+    
+</aiml>

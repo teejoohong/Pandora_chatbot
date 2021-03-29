@@ -39,11 +39,11 @@
             <postback>myinfo</postback>
         </button>  
         <button>
-            <text>Menu</text>
+            <text>Cookie Menu</text>
             <postback>menu</postback>
         </button> 
         <button>
-            <text>Photo Gallery</text>
+            <text>Cookie Photo Gallery</text>
             <postback>photo</postback>
         </button> 
         <button>
@@ -221,7 +221,6 @@
     </set>
     </think>
     I am <get var="years"/> years , <get var="days"/> days old.
-    
     </template>
 </category>
 

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	  <!--REFUND -->
+     <category>
+        <pattern>refund</pattern>
+        <template>
+            What can i help you regarding refund?
+            <button>
+                <text>Check refund status</text>
+                <postback>refundstatus</postback>
+            </button>
+            <button>
+                <text>How Lala refund me?</text>
+                <postback>howlalarefund</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>refundstatus</pattern>
+        <template>
+        Click on "Me"->"View Purchase History" ->  "Cancelled" -> "Check Details".<br/><br/>
+        <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>howlalarefund</pattern>
+        <template>
+         1. ATM Bank Transfer / Online Banking / ShopeePay / 7-Eleven Cash Payment 
+         will be refunded into Lala wallet automatically 7-14 working days after cancellation.<br/><br/>
+         2. Credit and Debit card payment will be refunded to respective cards after 7-14 working days.<br/><br/>
+          <button>
+            <text>Home</text>
+            <postback>hi</postback>
+        </button>
+        <button>
+            <text>Help</text>
+            <postback>help</postback>
+        </button>
+        </template>
+    </category>
+    
+    
+ <!--REFUND -->
+    <category>
+        <pattern>^ refund ^ slow ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ slow ^ refund ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+       <category>
+        <pattern>^ refund ^ not ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ not ^ refund ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+       <category>
+        <pattern>^ refund ^ no ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ no ^ refund ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ refund ^ when ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ when ^ refund ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ how ^ refund ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ refund ^ how ^</pattern>
+        <template><srai>howlalarefund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ refundstatus ^</pattern>
+        <template><srai>refundstatus</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ see ^ refund ^</pattern>
+        <template><srai>refundstatus</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ refund status ^</pattern>
+        <template><srai>refundstatus</srai></template>
+    </category>
+    
+    
+</aiml>
