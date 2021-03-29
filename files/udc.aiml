@@ -14,6 +14,27 @@
 </category>
 
 <category>
+    <pattern>^ wow ^</pattern>
+    <template>
+    I know right.
+   </template>
+</category>
+
+<category>
+    <pattern>what</pattern>
+    <template>
+    You sounds shocked 0.0 .
+   </template>
+</category>
+
+<category>
+    <pattern>^ aww ^</pattern>
+    <template>
+    I know right.
+   </template>
+</category>
+
+<category>
     <pattern>^ bye ^</pattern>
     <template>
     <random>
@@ -529,17 +550,17 @@
 //not found
 <category>
     <pattern>*</pattern>
-    <template>Anything else i can help you?
+    <template>Anything i can help you?
         <button>
             <text>My Info</text>
             <postback>myinfo</postback>
         </button>  
         <button>
-            <text>Menu</text>
+            <text>Cookie Menu</text>
             <postback>menu</postback>
         </button> 
         <button>
-            <text>Photo Gallery</text>
+            <text>Cookie Photo Gallery</text>
             <postback>photo</postback>
         </button> 
         <button>

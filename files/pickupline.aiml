@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<category><pattern>^ pickup line ^</pattern>
+<template><random>
+<li>Awak pakai gula untuk cuci muka eh? Sebab awak nampak manis sangat.</li>
+<li>Have you worked in KFC? Because ayam in love with you.</li>
+<li>Do you like kopi ais? Cause I don't think I'd ever find another kopi of you.</li>
+<li>Is your name Ismail? Cause Ismail when i see you.</li>
+<li>Hey are you a cow? Cause I cinta pada moooo.</li>
+<li>Do you believe in love at first sight—or should I walk by again?</li>
+</random></template>
+</category>
+</aiml>

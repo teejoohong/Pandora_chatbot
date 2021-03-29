@@ -54,7 +54,7 @@
         </button>
         <button>
             <text>How can i get my receipt</text>
-            <postback>getreceipt</postback>
+            <postback>receipt</postback>
         </button>
         <button>
             <text>Payment failed</text>
@@ -126,11 +126,11 @@
         </button>
         </template>
     </category>
-    
+
     <category>
-        <pattern>getreceipt</pattern>
+        <pattern>^ receipt ^</pattern>
         <template>
-        The receipt will be sent to your mail box after purchase.
+        1. The receipt will be sent to your mail box after purchase. <br/><br/>
         <button>
             <text>Home</text>
             <postback>hi</postback>
@@ -141,7 +141,6 @@
         </button>
         </template>
     </category>
-    
      <category>
         <pattern>ordergone</pattern>
         <template>
@@ -299,6 +298,13 @@
         </template>
     </category>
     
+    <category>
+        <pattern># long # ship #</pattern>
+        <template>
+        <srai>shippingduration</srai>
+        </template>
+    </category>
+    
     
     <category>
         <pattern>^ order ^ when ^</pattern>
@@ -351,6 +357,64 @@
     
         <category>
         <pattern>^ when ^ cookie ^</pattern>
+        <template>
+        <srai>shippingduration</srai>
+        </template>
+    </category>
+    
+    
+        <category>
+        <pattern>^ order ^ late ^</pattern>
+        <template>
+        <srai>shippingduration</srai>
+        </template>
+    </category>
+    
+    
+        <category>
+        <pattern>^ late ^ order ^</pattern>
+        <template>
+        <srai>shippingduration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ delivery ^ late ^</pattern>
+        <template>
+        <srai>shippingduration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ late ^ delivery ^</pattern>
+        <template>
+        <srai>shippingduration</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ shipping ^ late ^</pattern>
+        <template>
+        <srai>shippingduration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ late ^ shipping ^</pattern>
+        <template>
+        <srai>shippingduration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ cookie ^ late ^</pattern>
+        <template>
+        <srai>shippingduration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ late ^ cookie ^</pattern>
         <template>
         <srai>shippingduration</srai>
         </template>
@@ -613,15 +677,6 @@
         <template><srai>ordergone</srai></template>
     </category>
     
-    <category>
-        <pattern>^ getreceipt ^</pattern>
-        <template><srai>getreceipt</srai></template>
-    </category>
-    
-    <category>
-        <pattern>^ receipt ^</pattern>
-        <template><srai>getreceipt</srai></template>
-    </category>
     
     <category>
         <pattern>^ payment ^ fail ^</pattern>
@@ -675,6 +730,11 @@
     
     <category>
         <pattern>^ where ^ order ^</pattern>
+        <template><srai>shippingstatus</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ see ^ order ^</pattern>
         <template><srai>shippingstatus</srai></template>
     </category>
     
@@ -764,7 +824,46 @@
         <template><srai>shippingselection</srai></template>
     </category>
     
-   
+    <category>
+        <pattern>^ help ^ shipping ^</pattern>
+        <template><srai>shipping</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ help ^ refund ^</pattern>
+        <template><srai>refund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ help ^ topup ^</pattern>
+        <template><srai>topup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ order ^ help ^</pattern>
+        <template><srai>order</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ shipping ^ help ^</pattern>
+        <template><srai>shipping</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ refund ^ help ^</pattern>
+        <template><srai>refund</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ topup ^ help ^</pattern>
+        <template><srai>topup</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ order ^ help ^</pattern>
+        <template><srai>order</srai></template>
+    </category>
+    
     
     <!--LIST OF COMMAND -->
     <category>
@@ -777,6 +876,29 @@
     <category>
         <pattern>^ freegift ^</pattern>
         <template>Sorry our cookie is already very cheap! </template>
+    </category>
+    
+    <!-- Recommend -->
+    <category>
+        <pattern>^ recommend ^</pattern>
+        <template>hmmm....<br/><br/>
+        <get name="name"></get>, Lala think u should get <br/>
+        <random>
+        <li> Banana Cookie</li>
+        <li> Strawberry Cookie</li>
+        <li> Chocolate Chip Cookie</li>
+        <li> White Chocolate Cookie</li>
+        <li> Dark Chocolate Cookie</li>
+        </random>
+        </template>
+    </category>
+    
+        <!-- Recommend -->
+    <category>
+        <pattern>why</pattern>
+        <template>
+            Because it is good.
+        </template>
     </category>
 	
 </aiml>
