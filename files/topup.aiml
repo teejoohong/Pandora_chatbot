@@ -68,6 +68,11 @@
         <template><srai>donotreceivetopup</srai></template>
     </category>
     
+    <category>
+        <pattern>^ buy ^</pattern>
+        <template><srai>menu</srai></template>
+    </category>
+    
         <category>
         <pattern>^ no ^ credit ^</pattern>
         <template><srai>donotreceivetopup</srai></template>

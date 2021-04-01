@@ -176,9 +176,19 @@
         </template>
     </category>
     
-
+    <category>
+        <pattern># problem #</pattern>
+        <template>
+            <srai>help</srai>
+        </template>
+    </category>
     
-    
+    <category>
+        <pattern># trouble #</pattern>
+        <template>
+            <srai>help</srai>
+        </template>
+    </category>
 
     <!--SHIPPING  -->
     <category>
@@ -191,15 +201,15 @@
             </button>
             <button>
                 <text>Shipping selection</text>
-                <postback>shippingselection</postback>
+                <postback>shipping selection</postback>
             </button>
             <button>
                 <text>How to check shipping status?</text>
-                <postback>shippingstatus</postback>
+                <postback>shipping status</postback>
             </button>
             <button>
                 <text>Have not receive my cookie.</text>
-                <postback>shippingstatus</postback>
+                <postback>shipping status</postback>
             </button>
             <button>
                 <text>How long does it take to ship?</text>
@@ -215,7 +225,7 @@
     
     
     <category>
-        <pattern>shippingstatus</pattern>
+        <pattern>shipping status</pattern>
         <template>
         1. Me -> My Purchases -> To Receive Tab <br/><br/>
         2. Tap on the order you'd like to check on -> Click 'View' under Shipping Information to view shipping status. 
@@ -259,6 +269,26 @@
         </template>
     </category>
     
+        <category>
+        <pattern>^delivery ^ how much ^ </pattern>
+        <template>
+        <srai>shippingfee</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ shipping ^ how much ^</pattern>
+        <template>
+        <srai>shippingfee</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ courier ^ how much ^ </pattern>
+        <template>
+        <srai>shippingfee</srai>
+        </template>
+    </category>
         
     <!-- shipping duration-->
     <category>
@@ -271,28 +301,28 @@
     </category>
     
     <category>
-        <pattern>^ how long ^ courier ^</pattern>
+        <pattern>^ long ^ courier ^</pattern>
         <template>
         <srai>shippingduration</srai>
         </template>
     </category>
     
     <category>
-        <pattern>^ how long ^ delivery ^</pattern>
+        <pattern>^ long ^ delivery ^</pattern>
         <template>
         <srai>shippingduration</srai>
         </template>
     </category>
     
     <category>
-        <pattern>^ how long ^ order ^</pattern>
+        <pattern>^ long ^ order ^</pattern>
         <template>
         <srai>shippingduration</srai>
         </template>
     </category>
     
         <category>
-        <pattern>^ how long ^ shipping ^</pattern>
+        <pattern>^ long ^ shipping ^</pattern>
         <template>
         <srai>shippingduration</srai>
         </template>
@@ -363,6 +393,8 @@
     </category>
     
     
+    
+    
         <category>
         <pattern>^ order ^ late ^</pattern>
         <template>
@@ -417,6 +449,22 @@
         <pattern>^ late ^ cookie ^</pattern>
         <template>
         <srai>shippingduration</srai>
+        </template>
+    </category>
+    
+
+    
+    <category>
+        <pattern>ship</pattern>
+        <template>
+        <srai>shipping</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>ships</pattern>
+        <template>
+        <srai>shipping</srai>
         </template>
     </category>
     
@@ -475,6 +523,7 @@
         <srai>shippingduration</srai>
         </template>
     </category>
+
     
         <category>
         <pattern>^ order ^ not yet ^</pattern>
@@ -532,8 +581,10 @@
         </template>
     </category>
     
+
+    
     <category>
-        <pattern>shippingselection</pattern>
+        <pattern>shipping selection</pattern>
         <template>
         Buyers:<br/>
         Select your desired option when checkout <br/><br/>
@@ -646,6 +697,11 @@
         <pattern>^ order ^ gone ^</pattern>
         <template><srai>ordergone</srai></template>
     </category>
+    
+        <category>
+        <pattern>^ cookie ^ gone ^</pattern>
+        <template><srai>ordergone</srai></template>
+    </category>
 
     <category>
         <pattern>^ delivery ^ gone ^</pattern>
@@ -708,120 +764,187 @@
     </category>
     
     <category>
-        <pattern> ^ shipping selection ^</pattern>
-        <template><srai>shippingselection</srai></template>
+        <pattern>^ shipping selection ^</pattern>
+        <template><srai>shipping selection</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ choose ^ shipping ^</pattern>
+        <template><srai>shipping selection</srai></template>
+    </category>
+    
+        <category>
+        <pattern># choose # courier #</pattern>
+        <template><srai>shipping selection</srai></template>
+    </category>
+    
+            <category>
+        <pattern># select # courier #</pattern>
+        <template><srai>shipping selection</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ choose ^ shipping ^</pattern>
+        <template><srai>shipping selection</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ shipping selection ^</pattern>
+        <template><srai>shipping selection</srai></template>
     </category>
         
     <category>
-        <pattern> ^ select ^ courier ^</pattern>
-        <template><srai>shippingselection</srai></template>
+        <pattern>^ select ^ courier ^</pattern>
+        <template><srai>shipping selection</srai></template>
     </category>
     
     <category>
-        <pattern> ^ select ^ shipping ^</pattern>
-        <template><srai>shippingselection</srai></template>
+        <pattern>^ select ^ shipping ^</pattern>
+        <template><srai>shipping selection</srai></template>
     </category>
     
     <category>
-        <pattern> ^ shippingselection ^</pattern>
-        <template><srai>shippingselection</srai></template>
+        <pattern>^ shipping selection ^</pattern>
+        <template><srai>shipping selection</srai></template>
     </category>
     
     
     <category>
         <pattern>^ where ^ order ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern>^ see ^ order ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ view ^ order ^</pattern>
+        <template><srai>shipping status</srai></template>
     </category>
     
         <category>
         <pattern>^ where ^ delivery ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
-        <pattern> ^ shippingstatus ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <pattern> ^ shipping status ^</pattern>
+        <template><srai>shipping status</srai></template>
     </category>
     
     
     <category>
         <pattern> ^ receive ^ cookie ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
+    </category>
+    
+        <category>
+        <pattern> ^ receive ^ shipment ^</pattern>
+        <template><srai>shipping status</srai></template>
+    </category>
+
+
+        <category>
+        <pattern> ^ receive ^ shipping ^</pattern>
+        <template><srai>shipping status</srai></template>
+    </category>
+    
+        <category>
+        <pattern> ^ get ^ cookie ^</pattern>
+        <template><srai>shipping status</srai></template>
+    </category>
+    
+            <category>
+        <pattern> ^ got ^ cookie ^</pattern>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern> ^ shipping status ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
             <category>
         <pattern> ^ delivery ^ status ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern> ^ delivery ^ receive ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern>^ receive ^ delivery ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ get ^ delivery ^</pattern>
+        <template><srai>shipping status</srai></template>
     </category>
     
         <category>
         <pattern> ^ order ^ status ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern> ^ order ^ receive ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern>^ receive ^ order ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
+    
+        <category>
+        <pattern>^ get ^ order ^</pattern>
+        <template><srai>shipping status</srai></template>
+    </category>
+    
     
     <category>
         <pattern> ^ track ^ order ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
+    </category>
+    
+        <category>
+        <pattern> ^ track ^ shipping ^</pattern>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern> ^ track ^ cookie ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
         <category>
         <pattern> ^ track ^ delivery ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern> ^ view ^ order ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
         <category>
         <pattern> ^ view ^ delivery ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern> ^ shipping ^ status ^</pattern>
-        <template><srai>shippingstatus</srai></template>
+        <template><srai>shipping status</srai></template>
     </category>
     
     <category>
         <pattern> how ^ ship ^</pattern>
-        <template><srai>shippingselection</srai></template>
+        <template><srai>shipping selection</srai></template>
     </category>
     
     <category>
@@ -863,7 +986,7 @@
         <pattern>^ order ^ help ^</pattern>
         <template><srai>order</srai></template>
     </category>
-    
+        
     
     <!--LIST OF COMMAND -->
     <category>

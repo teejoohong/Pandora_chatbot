@@ -41,6 +41,43 @@
         </button>  
    </template>
     </category>
+    
+<category>
+    <pattern>^ cookie ^ nice ^</pattern>
+    <template>
+        It is very tasty, you will fall in love.
+        <button>
+            <text>See cookies in the menu</text>
+            <postback>menu</postback>
+        </button>  
+   </template>
+    </category>
+    
+<category>
+    <pattern>^ you ^ sell ^ cookie ^</pattern>
+    <template>
+        Ya , we sell cookie online.
+   </template>
+</category>
+
+<category>
+    <pattern>really</pattern>
+    <template>
+        Maybe...
+   </template>
+</category>
+    
+<category>
+    <pattern>^ cookie ^ taste ^</pattern>
+    <template>
+        It is very tasty, you will fall in love.
+        <button>
+            <text>See cookies in the menu</text>
+            <postback>menu</postback>
+        </button>  
+   </template>
+    </category>
+    
  <category>
         <pattern>^ where ^ shop ^</pattern>
         <template>We sell cookies online!
@@ -94,6 +131,13 @@
     <pattern>^ taste ^ original cookie ^</pattern>
     <template>
         It taste like love!
+   </template>
+    </category>
+    
+   <category>
+    <pattern>^ want ^ order ^</pattern>
+    <template>
+        <srai>menu</srai>
    </template>
     </category>
     
@@ -476,5 +520,7 @@
 	        <srai>^ chocolate raisin cookie ^</srai>
         </template>
 	</category>
+	
+
 	
 </aiml>

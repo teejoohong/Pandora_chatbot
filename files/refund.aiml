@@ -49,6 +49,13 @@
         </template>
     </category>
     
+    <category>
+        <pattern>^ can ^ refund ^</pattern>
+        <template>
+        Yes, you can get your refund if the order has not been shipped yet.
+        </template>
+    </category>
+    
     
  <!--REFUND -->
     <category>
@@ -107,12 +114,22 @@
     </category>
     
     <category>
-        <pattern>^ see ^ refund ^</pattern>
+        <pattern># see ^ refund #</pattern>
+        <template><srai>refundstatus</srai></template>
+    </category>
+    
+        <category>
+        <pattern># view ^ refund #</pattern>
         <template><srai>refundstatus</srai></template>
     </category>
     
     <category>
-        <pattern>^ refund status ^</pattern>
+        <pattern># refund status #</pattern>
+        <template><srai>refundstatus</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ get ^ refund ^</pattern>
         <template><srai>refundstatus</srai></template>
     </category>
     

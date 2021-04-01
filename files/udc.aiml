@@ -3,13 +3,34 @@
     
 
 <category>
-    <pattern>^ your name ^</pattern>
+    <pattern>name</pattern>
     <template>
     <random>
         <li>My name is </li>
         <li>I am </li>
     </random>    
     <bot name="name"></bot><br/><br/>
+   </template>
+</category>
+
+<category>
+    <pattern>what are you doing</pattern>
+    <template>
+        I am helping you.
+    </template>
+</category>
+
+<category>
+    <pattern>^ call ^</pattern>
+    <template>
+    <srai>contact</srai>
+   </template>
+</category>
+
+<category>
+    <pattern>nice</pattern>
+    <template>
+    I know right.
    </template>
 </category>
 
@@ -36,6 +57,17 @@
 
 <category>
     <pattern>^ bye ^</pattern>
+    <template>
+    <random>
+        <li>Bye Bye </li>
+        <li>Sayonara </li>
+    </random>
+    <get name = "name"></get>
+    </template>
+</category>
+
+<category>
+    <pattern>^ goodbye ^</pattern>
     <template>
     <random>
         <li>Bye Bye </li>
@@ -205,6 +237,12 @@
         <postback>help</postback>
     </button></template>
 </category>
+
+<category>
+    <pattern>how r u</pattern>
+    <template><srai>how are you</srai></template>
+</category>
+
 
 
 <!-- Age -->
@@ -570,6 +608,13 @@
     </template>
 </category>
 
+<category>
+    <pattern>thanks</pattern>
+    <template>
+        Boleh!
+    </template>
+</category>
+
 //SRAI
 <category>
     <pattern>how old are you</pattern>
@@ -592,12 +637,33 @@
 </category>
 
 <category>
+    <pattern>^ who am i ^</pattern>
+    <template><srai>WHAT IS MY NAME</srai></template>
+</category>
+
+<category>
+    <pattern>^ who is me ^</pattern>
+    <template><srai>WHAT IS MY NAME</srai></template>
+</category>
+
+
+<category>
     <pattern>^ name ^</pattern>
     <template><srai>what is your name</srai></template>
 </category>
 
 <category>
     <pattern>^ hi~ ^</pattern>
+    <template><srai>hi ^ <star/></srai></template>
+</category>
+
+<category>
+    <pattern>^ hey ^</pattern>
+    <template><srai>hi ^ <star/></srai></template>
+</category>
+
+<category>
+    <pattern>^ what is up ^</pattern>
     <template><srai>hi ^ <star/></srai></template>
 </category>
 
@@ -737,6 +803,11 @@
 </category>
 
 <category>
+    <pattern>Im *</pattern>
+    <template><srai>MY NAME IS <star/></srai></template>
+</category>
+
+<category>
     <pattern>^ info ^</pattern>
     <template><srai>myinfo</srai></template>
 </category>
@@ -745,5 +816,10 @@
     <pattern>^ where ^ are ^ you ^</pattern>
     <template><srai>location</srai></template>
 </category>
-  
+
+<category>
+    <pattern># who # are # you #</pattern>
+    <template><srai>name</srai></template>
+</category>
+
 </aiml>
