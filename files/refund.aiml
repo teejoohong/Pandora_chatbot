@@ -8,17 +8,17 @@
             What can i help you regarding refund?
             <button>
                 <text>Check refund status</text>
-                <postback>refundstatus</postback>
+                <postback>refund status</postback>
             </button>
             <button>
                 <text>How Lala refund me?</text>
-                <postback>howlalarefund</postback>
+                <postback>how lala refund</postback>
             </button>
         </template>
     </category>
     
     <category>
-        <pattern>refundstatus</pattern>
+        <pattern>refund status</pattern>
         <template>
         Click on "Me"->"View Purchase History" ->  "Cancelled" -> "Check Details".<br/><br/>
         <button>
@@ -33,7 +33,7 @@
     </category>
     
     <category>
-        <pattern>howlalarefund</pattern>
+        <pattern>how lala refund</pattern>
         <template>
          1. ATM Bank Transfer / Online Banking / ShopeePay / 7-Eleven Cash Payment 
          will be refunded into Lala wallet automatically 7-14 working days after cancellation.<br/><br/>
@@ -60,77 +60,84 @@
  <!--REFUND -->
     <category>
         <pattern>^ refund ^ slow ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
     </category>
     
     <category>
         <pattern>^ slow ^ refund ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
     </category>
     
        <category>
         <pattern>^ refund ^ not ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
     </category>
     
     <category>
         <pattern>^ not ^ refund ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
     </category>
     
        <category>
         <pattern>^ refund ^ no ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
     </category>
     
     <category>
         <pattern>^ no ^ refund ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
     </category>
     
         <category>
         <pattern>^ refund ^ when ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
     </category>
     
     <category>
         <pattern>^ when ^ refund ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
+    </category>
+    
+            <category>
+        <pattern>^ refund ^ late ^</pattern>
+        <template><srai>how lala refund</srai></template>
     </category>
     
     <category>
+        <pattern>^ late ^ refund ^</pattern>
+        <template><srai>how lala refund</srai></template>
+    </category>
+    
+    
+    <category>
         <pattern>^ how ^ refund ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
     </category>
     
         <category>
         <pattern>^ refund ^ how ^</pattern>
-        <template><srai>howlalarefund</srai></template>
+        <template><srai>how lala refund</srai></template>
     </category>
     
     <category>
-        <pattern>^ refundstatus ^</pattern>
-        <template><srai>refundstatus</srai></template>
+        <pattern>^ refund status ^</pattern>
+        <template><srai>refund status</srai></template>
     </category>
     
     <category>
         <pattern># see ^ refund #</pattern>
-        <template><srai>refundstatus</srai></template>
+        <template><srai>refund status</srai></template>
     </category>
     
         <category>
         <pattern># view ^ refund #</pattern>
-        <template><srai>refundstatus</srai></template>
+        <template><srai>refund status</srai></template>
     </category>
     
-    <category>
-        <pattern># refund status #</pattern>
-        <template><srai>refundstatus</srai></template>
-    </category>
     
     <category>
         <pattern>^ get ^ refund ^</pattern>
-        <template><srai>refundstatus</srai></template>
+        <template><srai>refund status</srai></template>
     </category>
     
     

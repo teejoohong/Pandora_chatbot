@@ -66,6 +66,9 @@
         </button>
         </template>
     </category>
+    
+
+    
     <category>
         <pattern>paymentfail</pattern>
         <template>
@@ -213,11 +216,11 @@
             </button>
             <button>
                 <text>How long does it take to ship?</text>
-                <postback>shippingduration</postback>
+                <postback>shipping duration</postback>
             </button>
             <button>
                 <text>How much is the shipping fee?</text>
-                <postback>shippingfee</postback>
+                <postback>shipping fee</postback>
             </button>
         </template>
     </category>
@@ -242,57 +245,101 @@
     
     <!-- shipping fee-->
     <category>
-        <pattern>shippingfee</pattern>
+        <pattern>shipping fee</pattern>
         <template>
-        RM3 to RM10 depends on the location.
+        RM3 and above, depends on the location.
         </template>
     </category>
     
     <category>
         <pattern>^ how much ^ delivery ^</pattern>
         <template>
-        <srai>shippingfee</srai>
+        <srai>shipping fee</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ cost ^ delivery ^</pattern>
+        <template>
+        <srai>shipping fee</srai>
+        </template>
+    </category>
+    
+            <category>
+        <pattern>^ cost ^ shipping ^</pattern>
+        <template>
+        <srai>shipping fee</srai>
         </template>
     </category>
     
     <category>
+        <pattern>^ cost ^ courier ^</pattern>
+        <template>
+        <srai>shipping fee</srai>
+        </template>
+    </category>
+        
+            <category>
+        <pattern>^ price ^ delivery ^</pattern>
+        <template>
+        <srai>shipping fee</srai>
+        </template>
+    </category>
+    
+            <category>
+        <pattern>^ price ^ shipping ^</pattern>
+        <template>
+        <srai>shipping fee</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ price ^ courier ^</pattern>
+        <template>
+        <srai>shipping fee</srai>
+        </template>
+    </category>
+        
+    
+    
+    <category>
         <pattern>^ how much ^ shipping ^</pattern>
         <template>
-        <srai>shippingfee</srai>
+        <srai>shipping fee</srai>
         </template>
     </category>
     
     <category>
         <pattern>^ how much ^ courier ^</pattern>
         <template>
-        <srai>shippingfee</srai>
+        <srai>shipping fee</srai>
         </template>
     </category>
     
         <category>
         <pattern>^delivery ^ how much ^ </pattern>
         <template>
-        <srai>shippingfee</srai>
+        <srai>shipping fee</srai>
         </template>
     </category>
     
     <category>
         <pattern>^ shipping ^ how much ^</pattern>
         <template>
-        <srai>shippingfee</srai>
+        <srai>shipping fee</srai>
         </template>
     </category>
     
     <category>
         <pattern>^ courier ^ how much ^ </pattern>
         <template>
-        <srai>shippingfee</srai>
+        <srai>shipping fee</srai>
         </template>
     </category>
         
     <!-- shipping duration-->
     <category>
-        <pattern>shippingduration</pattern>
+        <pattern>shipping duration</pattern>
         <template>
         Shipping duration : <br/><br/>
         Local : The parcel will be delivered within 3 days after the seller shipped out.<br/><br/>
@@ -303,35 +350,35 @@
     <category>
         <pattern>^ long ^ courier ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
     <category>
         <pattern>^ long ^ delivery ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
     <category>
         <pattern>^ long ^ order ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ long ^ shipping ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
     <category>
         <pattern># long # ship #</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
@@ -339,56 +386,56 @@
     <category>
         <pattern>^ order ^ when ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ when ^ order ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ delivery ^ when ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ when ^ delivery ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
     <category>
         <pattern>^ shipping ^ when ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ when ^ shipping ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ cookie ^ when ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ when ^ cookie ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
@@ -398,7 +445,7 @@
         <category>
         <pattern>^ order ^ late ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
@@ -406,49 +453,91 @@
         <category>
         <pattern>^ late ^ order ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ delivery ^ late ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ late ^ delivery ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
     <category>
         <pattern>^ shipping ^ late ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ late ^ shipping ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+            <category>
+        <pattern>^ do not ^ receive ^ shipping ^ yet ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+                <category>
+        <pattern>^ do not ^ get ^ shipping ^ yet ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+                <category>
+        <pattern>^ do not ^ receive ^ cookie ^ yet ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+                <category>
+        <pattern>^ do not ^ get ^ cookie ^ yet ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+                    <category>
+        <pattern>^ do not ^ receive ^ order ^ yet ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+                <category>
+        <pattern>^ do not ^ get ^ order ^ yet ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ cookie ^ late ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ late ^ cookie ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
@@ -471,56 +560,56 @@
         <category>
         <pattern>^ order ^ slow ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ slow ^ order ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ delivery ^ slow ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ slow ^ delivery ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
     <category>
         <pattern>^ shipping ^ slow ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ slow ^ shipping ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ cookie ^ slow ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ slow ^ cookie ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
 
@@ -528,56 +617,56 @@
         <category>
         <pattern>^ order ^ not yet ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ not yet ^ order ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ delivery ^ not yet ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ not yet ^ delivery ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
     <category>
         <pattern>^ shipping ^ not yet ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ not yet ^ shipping ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ cookie ^ not yet ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
         <category>
         <pattern>^ not yet ^ cookie ^</pattern>
         <template>
-        <srai>shippingduration</srai>
+        <srai>shipping duration</srai>
         </template>
     </category>
     
@@ -678,25 +767,38 @@
         <template><srai>order</srai></template>
     </category>
     
-    <category>
-        <pattern>^ cancel order ^</pattern>
-        <template><srai>cancelorder</srai></template>
-    </category>
-    
-    <category>
-        <pattern>^ cancelorder ^</pattern>
-        <template><srai>cancelorder</srai></template>
-    </category>
     
     <category>
         <pattern>^ cancel ^ order ^</pattern>
         <template><srai>cancelorder</srai></template>
     </category>
     
+        <category>
+        <pattern>^ cancel ^ cookie ^</pattern>
+        <template><srai>cancelorder</srai></template>
+    </category>
+    
+    
     <category>
         <pattern>^ order ^ gone ^</pattern>
         <template><srai>ordergone</srai></template>
     </category>
+    
+        <category>
+        <pattern>^ order ^ missing ^</pattern>
+        <template><srai>ordergone</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ do not ^ receive ^</pattern>
+        <template><srai>ordergone</srai></template>
+    </category>
+    
+            <category>
+        <pattern>^ do not ^ get ^</pattern>
+        <template><srai>ordergone</srai></template>
+    </category>
+    
     
         <category>
         <pattern>^ cookie ^ gone ^</pattern>
@@ -705,6 +807,11 @@
 
     <category>
         <pattern>^ delivery ^ gone ^</pattern>
+        <template><srai>ordergone</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ delivery ^ missing ^</pattern>
         <template><srai>ordergone</srai></template>
     </category>
     
@@ -759,12 +866,37 @@
     </category>
     
     <category>
-        <pattern> ^ free shipping ^</pattern>
+        <pattern> ^ free ^ shipping ^</pattern>
+        <template><srai>freeshipping</srai></template>
+    </category>
+    
+        <category>
+        <pattern> ^ free ^ ship ^</pattern>
+        <template><srai>freeshipping</srai></template>
+    </category>
+    
+        <category>
+        <pattern> ^ free ^ shipment ^</pattern>
         <template><srai>freeshipping</srai></template>
     </category>
     
     <category>
-        <pattern>^ shipping selection ^</pattern>
+        <pattern>^ shipping ^ selection ^</pattern>
+        <template><srai>shipping selection</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ shipping ^ selections ^</pattern>
+        <template><srai>shipping selection</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ shipping ^ method ^</pattern>
+        <template><srai>shipping selection</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ shipping ^ methods ^</pattern>
         <template><srai>shipping selection</srai></template>
     </category>
     
@@ -962,10 +1094,18 @@
         <template><srai>topup</srai></template>
     </category>
     
+        <category>
+        <pattern>^ help ^ order ^</pattern>
+        <template><srai>order</srai></template>
+    </category>
+    
+    
     <category>
         <pattern>^ order ^ help ^</pattern>
         <template><srai>order</srai></template>
     </category>
+    
+    
     
         <category>
         <pattern>^ shipping ^ help ^</pattern>
@@ -1021,6 +1161,34 @@
         <pattern>why</pattern>
         <template>
             Because it is good.
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ which ^ choose ^</pattern>
+        <template>
+            <srai>^ recommend ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ which ^ buy ^</pattern>
+        <template>
+            <srai>^ recommend ^</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ which ^ better ^</pattern>
+        <template>
+            <srai>^ recommend ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ which ^ nice ^</pattern>
+        <template>
+            <srai>^ recommend ^</srai>
         </template>
     </category>
 	
