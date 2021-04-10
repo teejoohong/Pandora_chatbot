@@ -343,6 +343,11 @@
         <template>Buy online.</template>
     </category>
     
+        <category>
+        <pattern>^ how ^ order ^</pattern>
+        <template>Buy online.</template>
+    </category>
+    
     <category>
         <pattern>^ where ^ store ^</pattern>
         <template>We dont have physical store.</template>
