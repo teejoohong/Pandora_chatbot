@@ -557,6 +557,63 @@
         </template>
     </category>
     
+            <category>
+        <pattern>^ order ^ long ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ long ^ order ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ delivery ^ long ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ long ^ delivery ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ shipping ^ long ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ long ^ shipping ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ cookie ^ long ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ long ^ cookie ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    //-
+    
         <category>
         <pattern>^ order ^ slow ^</pattern>
         <template>
@@ -608,6 +665,63 @@
     
         <category>
         <pattern>^ slow ^ cookie ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+    
+    <category>
+        <pattern>^ order ^ have not ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ have not ^ order ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ delivery ^ have not ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ have not ^ delivery ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ shipping ^ have not ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ have not ^ shipping ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ cookie ^ have not ^</pattern>
+        <template>
+        <srai>shipping duration</srai>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>^ have not ^ cookie ^</pattern>
         <template>
         <srai>shipping duration</srai>
         </template>
@@ -1043,6 +1157,7 @@
         <pattern> ^ track ^ order ^</pattern>
         <template><srai>shipping status</srai></template>
     </category>
+    
     
         <category>
         <pattern> ^ track ^ shipping ^</pattern>
